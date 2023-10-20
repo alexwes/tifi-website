@@ -1,11 +1,32 @@
-.head{
+.head {
   display: flex;
   flex-direction: row;
   align-content: center;
-  margin-left: 300px;
+  max-width: 800px;
+  margin: auto;
 }
 
-#hamburger-menu{
+.logo {
+  width: 360px;
+  margin-top: 30px;
+  margin-left: -23px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  position:fixed;
+  background-color: white;
+  z-index: 1;
+  margin-top: -10px;
+}
+
+#hamburger-menu {
   width: 40px;
   height: 57px;
   display: inline-block;
@@ -14,150 +35,143 @@
   margin-left: 3px;
 }
 
-#navbar{
+#navbar {
   display: none;
-  margin-left: 150px;
+  width: 700px;
+  margin: auto;
 }
 
-.logo{
-  width: 360px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: -23px;
-}
 
-body{
-  font-family: sans-serif;
-}
-
-.nav li{
-  margin-left: 100px;
+.nav li {
   color: black;
   display: inline;
   font-size: 60%;
   font-family: Helvetica;
   letter-spacing: 2px;
 }
-ul{
+ul {
   list-style: none;
-  transform: translateX(-130px);
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-left: -17px;
 }
-.nav{
+
+.nav {
   text-align: center;
-  width: 97%;
-  margin-bottom: 25px;
 }
-.nav a{
+.nav a {
   text-decoration: none;
   color: black;
   display: inline-block;
 }
 
-a:hover{
+a:hover {
   color: rgb(100, 107, 100);
 }
 
-.container{
+.container {
   text-align: center;
   max-width: 800px;
   margin: auto;
+  padding-top:160px
 }
 
-.bio-container{
+.bio-container {
   text-align: center;
   max-width: 1000px;
   margin: auto;
   margin-top: -50px;
 }
 
-.home-wrapper{
-    text-align: center;
-    display: inline-flex;
-    flex-direction: column;
+.home-wrapper {
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
 }
 
-.cite{
+.cite {
   font-size: 9pt;
   margin-bottom: 75px;
 }
 
-.quotes{
-  margin: 90px;
-  margin-bottom: 130px;
+.quotes {
+  margin-top: 90px;
+  margin-bottom:20px;
+  /* margin-bottom: 130px; */
   text-align: center;
   font-family: helvetica;
   letter-spacing: 2px;
   font-size: 10pt;
 }
 
-#quote1{
+#quote1 {
   margin: 15px auto;
   margin-bottom: 75px;
   width: 30%;
-} 
+}
 
-.home-wrapper img{
+.home-wrapper img {
   width: 900px;
 }
 
-.compare{
+.compare {
   display: flex;
   flex-direction: row;
 }
 
-.compare img{
+.compare img {
   margin: 50px 25px 0px 25px;
 }
 
-
-#bancalari{
+#bancalari {
   margin-top: -90px;
 }
 
-.artworks{
+.artworks {
   text-align: center;
   margin-top: 55px;
 }
-.art-display{
+.art-display {
   display: flex;
   justify-content: center;
   align-items: center;
   transform: translateY(-25px);
 }
 
-.interior-display{
+.interior-display {
   display: flex;
   justify-content: center;
   align-items: center;
   transform: translateY(-25px);
 }
 
-.interior-display .overlay-container img{
+.interior-display .overlay-container img {
   width: 300px;
 }
-#lower-image{
+#lower-image {
   margin-top: 25px;
 }
 
-.art-display .overlay-container{
+.art-display .overlay-container {
   margin: 0px 50px 100px 50px;
 }
 
-.interior-display .overlay-container{
+.interior-display .overlay-container {
   margin: 0px 30px 50px 30px;
 }
 
-.overlay-container img{
+.overlay-container img {
   width: 250px;
   top: -50%;
 }
 
-.contact{
+.contact {
   font-size: 9pt;
   margin-bottom: 40px;
 }
 
-.bio{
+.bio {
   padding-bottom: 70px;
   text-align: center;
   margin-left: 15%;
@@ -165,24 +179,24 @@ a:hover{
   line-height: 2;
 }
 
-.bio a{
+.bio a {
   text-decoration: none;
   color: rgb(27, 111, 148);
 }
 
-.bio a:hover{
+.bio a:hover {
   color: rgb(100, 107, 100);
 }
 
-.bio a:visited{
+.bio a:visited {
   color: rgb(27, 111, 148);
 }
 
-.overlay-container{
+.overlay-container {
   position: relative;
   float: left;
 }
-.overlay{
+.overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -191,88 +205,90 @@ a:hover{
   height: 99%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-color: rgba(239, 245, 240, 0.86);
 }
-.text-overlay{
+.text-overlay {
   color: black;
- font-size: 9pt;
- position: absolute;
- top: 50%;
- left: 50%;
- -webkit-transform: translate(-50%, -50%);
- -ms-transform: translate(-50%, -50%);
- transform: translate(-50%, -50%);
- text-align: center;
+  font-size: 9pt;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.overlay-container:hover .overlay{
-  opacity: .9;
+.overlay-container:hover .overlay {
+  opacity: 0.9;
 }
 
-.contact-img{
+.contact-img {
   width: 27px;
   height: 27px;
-  margin: 0px 10px; 
+  margin: 0px 10px;
 }
 
-#vertical-align2{
+#vertical-align2 {
   margin-top: 200px;
 }
 
-#vertical-align3{
+#vertical-align3 {
   margin-top: 0px;
 }
 
-#vertical-align4{
+#vertical-align4 {
   margin-top: 70px;
 }
 
-#vertical-align5{
+#vertical-align5 {
   margin-top: 35px;
 }
 
-#vertical-align6{
+#vertical-align6 {
   margin-top: 35px;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
-.video{
+.video {
   display: block;
   margin: 0 50px;
 }
 
-.vertical-adjust{
+.vertical-adjust {
   transform: translateY(30px);
-  }
+}
 
-  #contact-quote{
-    transform: translateY(-80px);
-  }
+#contact-quote {
+  transform: translateY(-80px);
+}
 
-#contact-image{
+#contact-image {
   transform: translateY(20px);
   width: 180px;
 }
 
-#vangogh{
-  margin-top: 50px;;
+#vangogh {
+  margin-top: 50px;
   width: 40%;
- }
-
-#video-text{
-    font-size: 10pt;
 }
 
-#home-cite{
+#video-text {
+  font-size: 10pt;
+}
+
+#home-cite {
   font-size: 9pt;
 }
 
 /* Source: https://www.w3schools.com/howto/howto_js_slideshow.asp  */
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -282,12 +298,18 @@ a:hover{
 }
 
 .slideshow-container2 {
-  max-width: 1000px;
-  position: relative;
+  max-width: 400px;
+  position:relative;
   margin: auto;
   margin-top: 50px;
 }
 
+.slideshow-container3 {
+  max-width: 500px;
+  position:relative;
+  margin: auto;
+  margin-top: 50px;
+}
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -297,27 +319,66 @@ a:hover{
 /* Hide the images by default */
 .mySlides2 {
   display: none;
-  width: 800px;
 }
 
-.mySlides img{
+.sidequote{
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  width: 50%;
+}
+
+.sidequote1{
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  width: 50%;
+  margin-left: 80px;
+}
+.sidequote1 p{
+  font-size: 25px;
+  width: 80%;
+}
+
+.sidequote p{
+  font-size: 25px;
+  width: 80%;
+}
+
+.imgquote{
+  display: flex;
+  flex-direction: row;
+  max-height: 535px;
+}
+
+.imgquote .slideshow-container2{
+  -ms-flex-align: start;
+}
+
+.mySlides img {
   max-width: 800px;
   max-height: 900px;
   width: auto;
   height: auto;
 }
 
-.mySlides2 img{
-  max-width: 800px;
-  max-height: 720px;
+.mySlides2 img {
+  max-width: 350px;
   width: auto;
   height: auto;
+  -ms-flex-align: start;
+}
+
+.mySlides3 img {
+  max-width: 450px;
+  width: auto;
+  height: auto;
+  -ms-flex-align: start;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
-  position:absolute;
+  position: absolute;
   top: 50%;
   width: auto;
   margin-top: -22px;
@@ -337,8 +398,9 @@ a:hover{
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -353,7 +415,7 @@ a:hover{
   letter-spacing: 2px;
 }
 
-.htext{
+.htext {
   color: #000000;
   font-size: 9px;
   text-align: center;
@@ -376,74 +438,107 @@ a:hover{
   animation-duration: 1.5s;
 }
 
-.abouthome{
+.abouthome {
   margin-top: 50px;
   line-height: 210%;
 }
 
-.signature{
+.signature {
   margin-top: 30px;
+  margin-bottom: 30px;
   width: 275px;
 }
 
-#bio-img{
+#bio-img {
   margin-top: 25px;
 }
 
-.bio-quote{
+.bio-quote {
   margin-top: 55px;
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+footer{
+  font-family: helvetica;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-top: 60px;
 }
 
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 @media only screen and (max-width: 1300px) {
-  .art-display .overlay-container{
+  .art-display .overlay-container {
     margin: 0px 50px 200px 50px;
     display: inline-block;
   }
 
-  .interior-display .overlay-container{
+  .interior-display .overlay-container {
     margin: 0px 50px 200px 50px;
     display: inline-block;
   }
-  .nav li{
+  .nav li {
     margin-left: 100px;
   }
 
-  ul{
+  ul {
     transform: translateX(-70px);
   }
 }
 
 @media only screen and (max-width: 1000px) {
-
-  header{
-    margin-left: -420px;
-    transform: scale(.9);
-  }
-  #navbar{
-    display: block;
+  header {
+    max-width: 100%;
+    margin: auto;
+    margin-top: -10px;
+    padding-bottom: 30px;
   }
 
-  .nav{
+  .head{
+    max-width: fit-content;
+    display: flex;
+  }
+  
+  #hamburger-menu{
+    width: 75px;
+    height: 100px;
+  }
+
+  .logo {
+    width: 70%;
+  }
+
+  #navbar {
+    display: hidden;
+    width: 100%;
+    margin: auto;
+    margin: 20px 0;
+  }
+
+  ul.nav{
+    margin: 0;
+  }
+  .nav {
     display: flex;
     flex-direction: row;
-    margin-left: -70px;
+    max-width: 100%;
   }
 
-  .nav li{
+  .nav li {
     font-size: 110%;
     letter-spacing: 3px;
-    margin: 45px;
   }
 
-  .prev, .next {
+  .prev,
+  .next {
     cursor: pointer;
-    position:absolute;
+    position: absolute;
     top: 50%;
     width: auto;
     margin-top: -22px;
@@ -456,167 +551,154 @@ a:hover{
     color: rgb(0, 0, 110);
   }
 
-  .signature{
+  .signature {
     width: 525px;
   }
-  
-  .logo{
-    width: 75%;
-  }
 
-  .home-wrapper{
+  .home-wrapper {
     font-size: 30pt;
   }
 
-  .home-wrapper img{
+  .home-wrapper img {
     width: 800px;
     margin: 0 auto;
   }
 
-  .bio{
+  .bio {
     font-size: 80%;
     margin-top: 90px;
   }
 
-
-  .contact{
+  .contact {
     font-size: 19pt;
     width: 85%;
     margin: 0 auto;
   }
 
-  .cite{
+  .cite {
     font-size: 17pt;
     margin-left: 15%;
     margin-right: 15%;
   }
 
-  .quotes{
+  .quotes {
     font-size: 2vh;
   }
 
-  #home-cite{
+  #home-cite {
     font-size: 64%;
   }
-  .socials img{
+  .socials img {
     width: 80px;
     height: auto;
     margin-top: 40px;
   }
 
-  .art-display{
+  .art-display {
     display: flex;
     flex-direction: column;
     width: 400px;
     margin: 0 auto;
   }
 
-  .interior-display{
+  .interior-display {
     display: flex;
     flex-direction: column;
     width: 400px;
     margin: 0 auto;
   }
 
-  .overlay-container{
+  .overlay-container {
     margin: 0px 100px 200px 100px;
     display: block;
     float: right;
   }
 
-  .overlay-container img{
+  .overlay-container img {
     min-width: 500px;
   }
 
-  .overlay-container:hover .overlay{
+  .overlay-container:hover .overlay {
     opacity: 0;
   }
 
-  .interior-display .overlay-container{
+  .interior-display .overlay-container {
   }
 
-  .interior-display p{
+  .interior-display p {
     margin-bottom: -120px;
   }
 
-  #bio-img{
+  #bio-img {
     width: 700px;
   }
 
-  .quotes{
+  .quotes {
     font-size: 20pt;
     width: 600px;
-    margin: 0 auto 150px auto;
+    /* margin: 0 auto 150px auto; */
   }
 
-  #quote-fix{
+  #quote-fix {
     font-size: 20pt;
   }
 
-  .hidden{
+  .hidden {
     display: inline-block;
     transform: translateY(-190px);
     font-size: 18pt;
   }
 
-  #video{
+  #video {
     width: 600px;
   }
 
-  #video-text{
+  #video-text {
     font-size: 200%;
     margin-bottom: 50px;
   }
 
-  #contact-quote{
+  #contact-quote {
     transform: translateY(80px);
   }
 
-  .art-display{
+  .art-display {
     transform: translateY(25px);
   }
 
-  #vangogh{
+  #vangogh {
     width: 600px;
     margin-top: 100px;
   }
 
-  #quote1{
+  #quote1 {
     min-width: 750px;
   }
 
-  .logo{
-    width: 800px;
-  }
-
-  .mySlides2 img{
-    max-width: 550px;
-  }
-
-  .phone{
+  .phone {
     font-size: 13px;
     font-family: helvetica;
   }
 
-  .phone2{
+  .phone2 {
     font-size: 20px;
     margin-top: 40px;
   }
 
-  .phone3{
+  .phone3 {
     font-size: 7px;
     font-family: helvetica;
   }
 
-  .slideshow-container{
+  .slideshow-container {
     margin-top: -40px;
   }
 
-  .other img{
+  .other img {
     min-width: 800px;
   }
 
-  #vangoghcont img{
+  #vangoghcont img {
     width: 100%;
     max-width: 550px;
   }
@@ -625,11 +707,11 @@ a:hover{
     margin-bottom: 180px;
   }
 
-  .interior-display div{
+  .interior-display div {
     margin: 0;
   }
-  
-  #contact-image{
+
+  #contact-image {
     transform: translateY(-5px);
     width: 180px;
   }
